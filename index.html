@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Celebrity Dating Quiz</title>
-  <link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" href= "css/bootstrap.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1"></script>
   <script src="js/scripts.js"></script>
@@ -12,7 +12,84 @@
 <body>
   <div class="container">
     <h1>Celebrity Dating Quiz</h1>
-    <p>Please answer a few questions to find your perfect match</p>
+    <p>Please answer a few questions to find your perfect celebrity match.</p>
+    <form id= "match-quiz">
+      <label for="book">What is your name?</label>
+      <input id="name" type="text">
+      <br>
+      <br>
+      <label for="book">Which book genre are you most likely to read?</label>
+      <select id="book">
+        <option value="romance">Romance</option>
+        <option value="self-help">Self-Improvement</option>
+        <option value="fiction">Fiction</option>
+        <option value="history">History</option>
+      </select>
+      <br>      
+      <br>      
+      <label for="marriage">How do you feel about marriage?</label>
+      <select id="marriage">
+        <option value="yes">Yes, I'd love to get married</option>
+        <option value="maybe">Maybe one day, I'm not sure yet</option>
+        <option value="no">No thanks.</option>
+      </select>
+      <br>
+      <br>
+      <label for="vacation">Where would you like to vacation?</label>
+      <select id="vacation">
+        <option value="Bali">Bali, Indonesia</option>
+        <option value="Maui">Maui, USA</option>
+        <option value="London">London, England</option>
+        <option value="New York">New York City, USA</option>
+        <option value="Tokyo">Tokyo, Japan</option>
+        <option value="Paris">Paris, France</option>
+      </select>
+      <br>
+      <br>
+      <label for="cofee">How do you drink your coffee?</label>
+      <select id="coffee">
+        <option value="black">black</option>
+        <option value="cream-and-sugar"> with cream and sugar please</option>
+        <option value="just-sugar"> with a little sugar</option>
+        <option value="cream">just cream</option>
+        <option value="nope">I don't drink coffee</option>
+      </select>
+      <br>
+      <br>
+      <button class="btn-default" type="submit">Submit</button>
+    </form>
+    <div class="perfect-match">
+      <p> <span id="user-name"></span>, your perfect match is...<span id="celeb"></span></p>
+      <div id="chang">
+        <h2>David Chang </h2>
+        <a id='LMsicJ1yTbhr-Wq4KkFjqw' class='gie-single' href='http://www.gettyimages.com/detail/165230118' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'LMsicJ1yTbhr-Wq4KkFjqw',sig:'ei-qYjqbBBydTUS45XgKQNNr-NDnCoEb2B58MnzQFJY=',w:'594px',h:'445px',items:'165230118',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+      </div>
+      <div id="kravitz">
+        <h2>Lenny Kravitz</h2>
+        <a id='Lm7wQB1pSLN9QI4hHnXTvA' class='gie-single' href='http://www.gettyimages.com/detail/499527236' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'Lm7wQB1pSLN9QI4hHnXTvA',sig:'CTgJlaBpFLy9t8TiWixA9DLXJbQMEsIq_52j87xBROw=',w:'594px',h:'395px',items:'499527236',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+      </div>
+      <div id="glover">
+        <h2>Donald Glover</h2>
+        <a id='cqHEE6vHTF1uponO0-yC_w' class='gie-single' href='http://www.gettyimages.com/detail/970180880' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'cqHEE6vHTF1uponO0-yC_w',sig:'Tt65p8xaWKTzyu_8NwRaUTe0MlxtrTlqJIHoPEkq1lM=',w:'396px',h:'594px',items:'970180880',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+      </div>
+      
+      <div id="Elba">
+        <h2>Idris Elba</h2><a id='STaAGHGOTJ1AxVMLGr9zUw' class='gie-single' href='http://www.gettyimages.com/detail/1069264424' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'STaAGHGOTJ1AxVMLGr9zUw',sig:'nB3yfxvDJLsOsxbJsIcpdU-egfCtXcgAn0TnXxkqJZU=',w:'424px',h:'594px',items:'1069264424',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+      </div>
+      <div id="Domingo">
+        <h2>Coleman Domingo</h2><a id='zgwz40OvQYFjjUiv8So7vA' class='gie-single' href='http://www.gettyimages.com/detail/1042183608' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'zgwz40OvQYFjjUiv8So7vA',sig:'Idl5TbYuIO-SeeGToCyyvW8tZgiBzGFIuZSTo1CsWMY=',w:'400px',h:'594px',items:'1042183608',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+      </div>
+      <div id="Kim">
+        <h2>Daniel Dae Kim</h2><a id='c-3_Jvz4QhFiuqfiM0QhTA' class='gie-single' href='http://www.gettyimages.com/detail/539707768' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'c-3_Jvz4QhFiuqfiM0QhTA',sig:'weg7FUdLCIhsaEm2hdvKtIa5Swwa010rHv9lGEt8KfQ=',w:'395px',h:'594px',items:'539707768',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+      </div>
+      <div id="Hardy">
+        <h2>Tom Hardy</h2><a id='NVj67m8sRU13443jWhBN7Q' class='gie-single' href='http://www.gettyimages.com/detail/1044419810' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'NVj67m8sRU13443jWhBN7Q',sig:'8Bo2XOsrlXg5j9lVYbUHmEXTwzsi2Zufw-a_9QoSuvE=',w:'428px',h:'594px',items:'1044419810',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+      </div>
+      <div id="Penn">
+        <h2>Kal Penn</h2><a id='CiaMl5zMTnFaSb3COcz57Q' class='gie-single' href='http://www.gettyimages.com/detail/925150324' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'CiaMl5zMTnFaSb3COcz57Q',sig:'U77FQnce-VGej76qzdd9oAREt0KrVUtYdEzYFZ7BDig=',w:'426px',h:'594px',items:'925150324',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>

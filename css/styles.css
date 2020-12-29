@@ -1,7 +1,7 @@
 
-/*.perfect-match{
+.perfect-match{
   display: none;
-}*/
+}
 
 body{
   display:grid;
@@ -15,4 +15,8 @@ button{
   border-radius: 13%;
   border-style:none;
   font-size: 15px;
+}
+
+.matches{
+  display: none;
 }

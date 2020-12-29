@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
   const matchQuiz = document.getElementById('match-quiz').addEventListener
   ('submit', (e) => {
-//span to for append
+//span for appending 
   const result = document.getElementById('celeb');  
   let userName = document.getElementById('user-name');
 //quiz input
@@ -19,12 +19,9 @@ document.addEventListener('DOMContentLoaded', function(){
   const kim = document.getElementById('kim');
   const hardy = document.getElementById('hardy');
   const penn = document.getElementById('penn');
-
 //append user name and celeb match
   userName.append(name);
-  result.append(elba);
-  
-
+$('.perfect-match').show();
   e.preventDefault();
   })
 });

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const matchQuiz = document.getElementById('match-quiz').addEventListener
   ('submit', (e) => {
 //span for appending 
-  const result = document.getElementById('celeb');  
+  const celeb = document.getElementById('celeb');  
   let userName = document.getElementById('user-name');
 //quiz input
   let name = document.getElementById('name').value;
@@ -19,9 +19,27 @@ document.addEventListener('DOMContentLoaded', function(){
   const kim = document.getElementById('kim');
   const hardy = document.getElementById('hardy');
   const penn = document.getElementById('penn');
+//control flow for celebrity match
+  if (marriage=== 'no'&& coffee==='black' && vacation=== 'Bali' || book==='self-help'){
+   $(kravitz).show()}
+  else if (book === 'fiction'&& marriage=== 'yes'&& coffee==='cream-and-sugar'|| vacation==='London'){
+  $(chang).show()}
+  else if (marriage=== 'maybe'&& coffee==='cream-and-sugar'){
+  $(glover).show()}
+  else if (book === 'romance'&& marriage=== 'maybe'|| vacation==='Tokyo'){
+  $(elba).show()}
+  else if (book === 'fiction'&& marriage=== 'no'||vacation==='Paris'){
+  $(domingo).show()}
+  else if (book === 'history'|| marriage=== 'yes' && coffee==='black'){
+  $(kim).show()}
+  else $(hardy).show();
+console.log(book,vacation,marriage);
 //append user name and celeb match
   userName.append(name);
-$('.perfect-match').show();
+  $('.perfect-match').show();
+  
   e.preventDefault();
-  })
+  
+  });
+
 });

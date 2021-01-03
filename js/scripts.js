@@ -33,13 +33,14 @@ document.addEventListener('DOMContentLoaded', function(){
   else if (book === 'history'|| marriage=== 'yes' && coffee==='black'){
   $(kim).show()}
   else $(hardy).show();
-console.log(book,vacation,marriage);
 //append user name and celeb match
   userName.append(name);
   $('.perfect-match').show();
-  
+//hide form
+  $('#match-quiz').hide();
+//retake quiz
+
   e.preventDefault();
-  
   });
 
 });

@@ -1,6 +1,6 @@
 # _Celebrity Dating Quiz_
 
-#### _This repo exists to practice control flow using JavaScript and is taken from Epicodus'curriculum [LearnHowToProgram.com](https://www.learnhowtoprogram.com/)_
+#### _This repo exists to practice control flow using JavaScript and is taken from Epicodus' curriculum [LearnHowToProgram.com](https://www.learnhowtoprogram.com/)_
 
 #### By _**Dior Shelton**_
 

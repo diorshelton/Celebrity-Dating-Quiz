@@ -11,10 +11,12 @@ body{
   background-color: rgb(218, 212, 204);
 }
 
-button{
-  border-radius: 13%;
+.btn-default{
+  border-radius: 5%;
   border-style:none;
   font-size: 15px;
+  background-color: rgb(47, 105, 167);
+  color:white;
 }
 
 .matches{

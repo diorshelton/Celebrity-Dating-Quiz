@@ -27,5 +27,3 @@ _Copyright (c) 2021 Dior Shelton_
 
 ## Contact Information
 _If you run into any issues, have questions, ideas or concerns I encourage you to contact me or make a contribution to the code._
-
-_The best way to contact me about this repo is via Github_

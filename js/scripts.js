@@ -38,8 +38,9 @@ document.addEventListener('DOMContentLoaded', function(){
   $(kim).show()}
   else {$(hardy).show()}
 
-//append user name and celeb match
-  userName.append(name);
+//append user name and celeb matchls
+
+  $('#user-name').text(name);
   $('.perfect-match').show();
 
 //hide form
@@ -54,11 +55,6 @@ document.addEventListener('DOMContentLoaded', function(){
   }
   resetBtn.addEventListener('click', resetQuiz);
 
-  
- 
   e.preventDefault();  
- 
-
   });
-
 });

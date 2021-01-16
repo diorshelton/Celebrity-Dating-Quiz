@@ -13,7 +13,7 @@
 
 ## Description
 
-_Celebrity Dating Quiz asks the user a few general questions and pairs them with a male celebrity that is their "perfect match" based on their answers._
+_Celebrity Dating Quiz asks the user a few general questions and pairs them with a celebrity that is their "perfect match" based on their answers._
 
 ## Known Bugs
 
